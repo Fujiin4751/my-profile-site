@@ -3,51 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Giới thiệu bản thân</title>
+  <title>About Me</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f6f8;
-      color: #333;
-      max-width: 700px;
-      margin: auto;
-      padding: 20px;
+      background-color: #0f172a;
+      color: #f1f5f9;
+      margin: 0;
+      padding: 0;
     }
-    h1 {
-      color: #0070f3;
+    header {
       text-align: center;
+      padding: 30px 10px;
+      background: #1e293b;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #93c5fd;
+    }
+    header p {
+      color: #cbd5e1;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 30px;
     }
     .card {
-      background: white;
-      padding: 15px 20px;
-      margin: 15px 0;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      background: #1e293b;
+      border-radius: 12px;
+      padding: 20px;
+      flex: 1;
+      min-width: 280px;
+      max-width: 400px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    h2 {
+      color: #818cf8;
+      margin-top: 0;
+    }
+    .info p {
+      margin: 8px 0;
+      padding: 10px;
+      background: #334155;
+      border-radius: 8px;
+    }
+    .skills span {
+      display: inline-block;
+      margin: 6px;
+      padding: 8px 14px;
+      background: #334155;
+      border-radius: 20px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-  <h1>🌟 Giới thiệu bản thân</h1>
+  <header>
+    <h1>About Me</h1>
+    <p>Tìm hiểu thêm về tôi</p>
+  </header>
 
-  <div class="card">
-    <h2>Thông tin</h2>
-    <p><strong>MSSV:</strong> 123456789</p>
-    <p><strong>Quê quán:</strong> TP. Hồ Chí Minh</p>
-  </div>
+  <div class="container">
+    <!-- Thông tin cá nhân -->
+    <div class="card info">
+      <h2>Thông tin cá nhân</h2>
+      <p><strong>MSSV:</strong> 23133043</p>
+      <p><strong>Tuổi:</strong> 20</p>
+      <p><strong>Năm học:</strong> Sinh viên năm 3</p>
+      <p><strong>Trường:</strong> Đại học Sư phạm Kỹ thuật TP.HCM</p>
+      <p><strong>Ngành:</strong> Kỹ thuật Dữ liệu</p>
+      <p><strong>Quê quán:</strong> An Giang</p>
+    </div>
 
-  <div class="card">
-    <h2>Giới thiệu</h2>
-    <p>Xin chào! Mình là sinh viên ngành Công nghệ Thông tin. Mình thích học hỏi công nghệ mới và muốn trở thành một kỹ sư phần mềm.</p>
-  </div>
-
-  <div class="card">
-    <h2>Sở thích</h2>
-    <ul>
-      <li>Lập trình</li>
-      <li>Đọc sách</li>
-      <li>Đá bóng</li>
-      <li>Du lịch</li>
-    </ul>
+    <!-- Sở thích / Kỹ năng -->
+    <div class="card skills">
+      <h2>Sở thích & Kỹ năng</h2>
+      <span>Đọc sách</span>
+      <span>Chơi game</span>
+      <span>Nghe nhạc</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+    </div>
   </div>
 </body>
 </html>
